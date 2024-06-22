@@ -413,7 +413,7 @@ export namespace ProgramExercise {
       K3 extends keyof IProgramExercise[K1][K2],
       K4 extends keyof IProgramExercise[K1][K2][K3]
     >(key1: K1, key2: K2, key3: K3, key4: K4): IProgramExercise[K1][K2][K3][K4] {
-      const diffPath = `${key1}.${key2}.${key3}.${key4}`;
+      const diffPath = `${key1}.${String(key2)}.${String(key3)}.${String(key4)}`;
       const oldValue = oldExercise[key1]?.[key2]?.[key3]?.[key4];
       const newValue = newExercise[key1][key2][key3][key4];
       return enforceNew || (newExercise.diffPaths || []).some((dp) => dp.startsWith(diffPath))

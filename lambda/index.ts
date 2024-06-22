@@ -105,7 +105,7 @@ async function getCurrentUserId(event: APIGatewayProxyEvent, di: IDI): Promise<s
     let isValid = false;
     try {
       isValid = !!JWT.verify(cookies.session, cookieSecret);
-    } catch (e) {
+    } catch (e:any) {
       if (e.constructor.name !== "JsonWebTokenError") {
         throw e;
       }

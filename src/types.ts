@@ -904,6 +904,9 @@ export type IExerciseData = Partial<Record<string, IExerciseDataValue>>;
 export const screenMuscles = [
   "shoulders",
   "triceps",
+  "lats",
+  "trap",
+  "neck",
   "back",
   "abs",
   "glutes",

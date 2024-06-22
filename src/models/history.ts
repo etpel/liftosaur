@@ -242,6 +242,9 @@ export namespace History {
         biceps: [[], [], []],
         calves: [[], [], []],
         forearms: [[], [], []],
+        neck: [],
+        lats: [],
+        trap: []
       },
     };
   }

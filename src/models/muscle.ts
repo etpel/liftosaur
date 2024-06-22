@@ -32,16 +32,20 @@ const screenMuscleToMuscleMapping: Record<IScreenMuscle, IMuscle[]> = {
     "Teres Minor",
   ],
   triceps: ["Triceps Brachii"],
-  back: [
-    "Erector Spinae",
+  lats: [
     "Latissimus Dorsi",
-    "Levator Scapulae",
+  ],
+  trap:[
     "Trapezius Lower Fibers",
     "Trapezius Middle Fibers",
-    "Trapezius Upper Fibers",
+    "Trapezius Upper Fibers"
+  ],
+  neck: [
+    "Levator Scapulae",
     "Sternocleidomastoid",
     "Splenius",
   ],
+  back: ["Erector Spinae"],
   abs: ["Obliques", "Rectus Abdominis", "Iliopsoas"],
   glutes: ["Gluteus Maximus", "Gluteus Medius", "Tensor Fasciae Latae"],
   hamstrings: ["Adductor Magnus", "Adductor Brevis", "Adductor Longus", "Hamstrings"],

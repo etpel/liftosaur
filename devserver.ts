@@ -79,7 +79,7 @@ const server = https.createServer(
         res.setHeader(k, result.headers![k] as string);
       }
       res.end(body);
-    } catch (e) {
+    } catch (e:any) {
       console.error(e);
       res.setHeader("Content-Type", "application/json");
       res.end(JSON.stringify({ name: e.name, error: e.message, stack: e.stack }));
